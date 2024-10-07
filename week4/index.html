@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <div class="error" id="nameError"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <div class="error" id="emailError"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <div class="error" id="passwordError"></div>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <div class="error" id="confirmPasswordError"></div>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            <div class="error" id="ageError"></div>
+
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <div class="error" id="genderError"></div>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="">Select your country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <!-- Add more countries as needed -->
+            </select>
+            <div class="error" id="countryError"></div>
+
+            <label>
+                <input type="checkbox" id="terms" required> I agree to the Terms and Conditions
+            </label>
+            <div class="error" id="termsError"></div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+            <div class="error" id="loginEmailError"></div>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <div class="error" id="loginPasswordError"></div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
